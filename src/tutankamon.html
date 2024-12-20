@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-      charset="utf-8"
-    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tutankamon</title>
-        <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles.scss" />
-    <script src="./app.ts" type="module" defer></script>
+    <script src="./app.ts" defer></script>
   </head>
   <body>
     <include src="header.html"></include>
@@ -27,21 +24,25 @@
           </p>
           <figure class="tutankamon-image">
             <picture>
-              <source 
-                srcset="assets/tutankamon-mobile.webp" 
-                media="(max-width: 767px)" 
-                type="image/webp" />
-              <source 
-                srcset="assets/tutankamon-tablet.webp" 
-                media="(min-width: 768px) and (max-width: 1024px)" 
-                type="image/webp" />
-              <source 
-                srcset="assets/tutankamon.webp" 
-                media="(min-width: 1025px)" 
-                type="image/webp" />
-              <img 
-                src="assets/tutankamon.jpeg" 
-                alt="Descubrimiento tutankamon"/>
+              <source
+                srcset="assets/tutankamon-mobile.webp"
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
+              <source
+                srcset="assets/tutankamon-tablet.webp"
+                media="(min-width: 768px) and (max-width: 1024px)"
+                type="image/webp"
+              />
+              <source
+                srcset="assets/tutankamon.webp"
+                media="(min-width: 1025px)"
+                type="image/webp"
+              />
+              <img
+                src="assets/tutankamon.jpeg"
+                alt="Descubrimiento tutankamon"
+              />
             </picture>
 
             <figcaption>
@@ -52,7 +53,7 @@
         </section>
         <section class="article-text">
           <h2>La historia</h2>
-          <p >
+          <p>
             El 4 de noviembre de 1922, después de más de una década de intenso
             trabajo en el Valle de los Reyes, la gran necrópolis de los faraones
             egipcios, el arqueólogo Howard Carter halló el primer escalón de una
@@ -105,7 +106,6 @@
               height="608"
               src="https://www.youtube.com/embed/U6gm7pZHG5k"
               title="Se cumplen 100 años del descubrimiento de la tumba de Tutankamón"
-              frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
@@ -122,11 +122,14 @@
             <li id="show-image-1">
               La tumba de Tutankamón estaba increíblemente bien escondida
             </li>
-            <li id="show-image-2">Pocos creían que la tumba pudiera encontrarse pero Howard Carter se negó a rendirse</li>
+            <li id="show-image-2">
+              Pocos creían que la tumba pudiera encontrarse pero Howard Carter
+              se negó a rendirse
+            </li>
             <li id="show-image-3">Creó nuevas normas para la arqueología</li>
             <li>La tumba ya había sido asaltada anteriormente</li>
             <li>La tumba real se encontró algo desordenada</li>
-           
+
             <li>Ha dado forma a nuestra comprensión de la historia egipcia</li>
             <li>La Tutankamonmanía se extendió por todo el mundo</li>
             <li>Egipto mantuvo el control de las antigüedades de Tutankamón</li>
@@ -139,39 +142,39 @@
           <h2>Otras secciones de interés</h2>
           <ul>
             <li>
-                <h3>
-                    <a href="/"
-                      >Construcción de las Pirámides</a
-                    >
-                </h3>
-                <p>
-                  Explora artículos detallados sobre los faraones, las dinastías
-                  y la cultura del antiguo Egipto.
-                </p>
-              </a>
+              <h3>
+                <a href="/">Construcción de las Pirámides</a>
+              </h3>
+              <p>
+                Explora artículos detallados sobre los faraones, las dinastías y
+                la cultura del antiguo Egipto.
+              </p>
             </li>
             <li>
-                <h3><a href="/">Revolución Egipcia de 2011</a></h3>
-                <p>
-                  Parte de la Primavera Árabe, esta revolución llevó a la renuncia del
-                  presidente Hosni Mubarak.
-                </p>
+              <h3><a href="/">Revolución Egipcia de 2011</a></h3>
+              <p>
+                Parte de la Primavera Árabe, esta revolución llevó a la renuncia
+                del presidente Hosni Mubarak.
+              </p>
             </li>
           </ul>
         </section>
       </article>
     </main>
     <include src="footer.html"></include>
+
+    <div class="image-container">
+      <img id="image-1" src="assets/mapa.webp" alt="Tumba escondida" />
+      <img id="image-2" src="assets/Howard_carter.jpg" alt="Howard Carter" />
+      <img
+        id="image-3"
+        src="assets/tutankamon_grafico.png"
+        alt="Diagrama Tutankamon"
+      />
+    </div>
+
+    <div class="overlay" id="image-overlay">
+      <img id="overlay-image" src="assets/mapa.webp" alt="Vista ampliada" />
+    </div>
   </body>
 </html>
-
-  <div class="image-container">
-    <img id="image-1" src="assets/mapa.webp" alt="Tumba escondida">
-    <img id="image-2" src="assets/Howard_carter.jpg" alt="Howard Carter">
-    <img id="image-3" src="assets/tutankamon_grafico.png" alt="Diagrama Tutankamon"> 
-  </div>
-
-  <div class="overlay" id="image-overlay">
-    <img id="overlay-image" src="assets/mapa.webp" alt="Vista ampliada">
-  </div> 
-  

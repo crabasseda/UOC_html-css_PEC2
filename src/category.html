@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-      charset="utf-8"
-    />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Categorias</title>
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles.scss" />
   </head>
+
   <body>
     <include src="header.html"></include>
     <main>
@@ -18,33 +15,83 @@
       <ul>
         <li>
           <h3>
-            <a href="/"
-              >Construcción de las Pirámides</a
-            >
+            <a href="/">Construcción de las Pirámides</a>
           </h3>
-          <p>
+          <p class="container-text-image">
+            <picture>
+              <source
+                srcset="assets/piramides-giza-mobile.webp"
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
+              <source
+                srcset="assets/piramides-giza-tablet.webp"
+                media="(min-width: 768px) and (max-width: 1024px)"
+                type="image/webp"
+              />
+              <source
+                srcset="assets/piramides-giza.webp"
+                media="(min-width: 1025px)"
+                type="image/webp"
+              />
+              <img src="assets/piramides-giza.jpg" alt="Piramides de Giza" />
+            </picture>
             Las pirámides de Giza fueron construidas alrededor del 2580 - 2560
             a.C. y son una de las Siete Maravillas del Mundo Antiguo.
           </p>
         </li>
         <li>
           <h3>
-            <a href="tutankamon.html" >
-           
+            <a href="tutankamon.html">
               Descubrimiento de la Tumba de Tutankamón</a
             >
           </h3>
           <p class="container-text-image">
-            <img src="assets/tutankamon.jpeg" alt="Tutankamón" >
-            En 1922, el arqueólogo Howard Carter descub∫rió la tumba casi intacta
-            del faraón Tutankamón en el Valle de los Reyes.
+            <picture>
+              <source
+                srcset="assets/tutankamon-mobile.webp"
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
+              <source
+                srcset="assets/tutankamon-tablet.webp"
+                media="(min-width: 768px) and (max-width: 1024px)"
+                type="image/webp"
+              />
+              <source
+                srcset="assets/tutankamon.webp"
+                media="(min-width: 1025px)"
+                type="image/webp"
+              />
+              <img
+                src="assets/tutankamon.jpeg"
+                alt="Descubrimiento tutankamon"
+              />
+            </picture>
+            En 1922, el arqueólogo Howard Carter descub∫rió la tumba casi
+            intacta del faraón Tutankamón en el Valle de los Reyes.
           </p>
         </li>
         <li>
           <h3>
             <a href="/">Revolución Egipcia de 2011</a>
           </h3>
-          <p>
+          <p class="container-text-image">
+            <picture>
+              <source
+                srcset="assets/revolucion-egipcia-mobile.webp"
+                media="(max-width: 767px)"
+                type="image/webp"
+              />
+              <source
+                srcset="assets/revolucion-egipcia.webp"
+                type="image/webp"
+              />
+              <img
+                src="assets/revolucion-egipcia.jpg"
+                alt="Revolucion egipcia"
+              />
+            </picture>
             Parte de la Primavera Árabe, esta revolución llevó a la renuncia del
             presidente Hosni Mubarak.
           </p>
@@ -61,7 +108,7 @@
           </p>
         </li>
         <li>
-          <h3><a href="#">Templo de Karnak</h3>
+          <h3><a href="#">Templo de Karnak</a></h3>
           <p>
             El complejo de templos más grande de Egipto, dedicado al dios Amón.
           </p>
