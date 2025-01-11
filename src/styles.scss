@@ -33,7 +33,7 @@ body {
   width: 100%;
   position: relative;
   overflow: hidden;
-  background-image: url("assets/jeroglificos-egipcios.jpg");
+  background-image: url("assets/jeroglificos-egipcios.webp");
   background-size: cover;
   background-position: center;
 }
@@ -149,8 +149,6 @@ nav {
 }
 
 .social-icon {
-  width: 30px;
-  height: auto;
   transition: transform 0.3s ease;
 }
 
@@ -481,7 +479,7 @@ figcaption {
   }
 
   nav ul a {
-    font-size: x-small;
+    font-size: small;
   }
 
   .social-icons {
