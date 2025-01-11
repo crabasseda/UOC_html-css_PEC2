@@ -7,7 +7,29 @@
     <title>Tutankamon</title>
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="styles.scss" />
+
     <script async src="./app.ts"></script>
+    <script defer>
+      document.addEventListener("DOMContentLoaded", function () {
+        const iframe = document.querySelector("iframe[data-src]");
+
+        if (iframe) {
+          const observer = new IntersectionObserver(
+            (entries, observer) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  iframe.src = iframe.getAttribute("data-src");
+                  observer.disconnect();
+                }
+              });
+            },
+            { threshold: 0.5 }
+          );
+
+          observer.observe(iframe);
+        }
+      });
+    </script>
   </head>
   <body>
     <include src="header.html"></include>
@@ -108,9 +130,8 @@
             <iframe
               width="1080"
               height="608"
-              src="https://www.youtube.com/embed/U6gm7pZHG5k"
+              data-src="https://www.youtube.com/embed/U6gm7pZHG5k"
               title="Se cumplen 100 años del descubrimiento de la tumba de Tutankamón"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin"
               allowfullscreen
               loading="lazy"
